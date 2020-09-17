@@ -1,5 +1,5 @@
 # RGNN
-Code for "Residual graph learning with directed message passing for molec-ular properties prediction"
+Code for "Residual graph learning with directed message passing for molecular properties prediction"
 
 
 ### Requirements 
@@ -18,7 +18,6 @@ git clone https://github.com/yvquanli/rgnn
 # download and unzip dataset from https://s3-us-west-1.amazonaws.com/deepchem.io/datasets/molnet_publish/qm9.zip
 python run.py $task $gpu
 
-usage: python run.py [task] [depth] [cuda_device] [seed]
 ```
 
 **For alchemy dataset**
@@ -26,7 +25,6 @@ usage: python run.py [task] [depth] [cuda_device] [seed]
 git clone https://github.com/yvquanli/rgnn
 # download and unzip dataset from https://alchemy.tencent.com/
 python run.py $task $gpu
-
 
 ```
 
