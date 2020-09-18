@@ -19,7 +19,7 @@ option = {
 
     'parallel': False,
     'cuda_devices': [gpu],  # works when parallel=True
-    'early_stop_patience': 30,  # -1 for no early stop
+    'early_stop_patience': -1,  # -1 for no early stop
 }
 
 
