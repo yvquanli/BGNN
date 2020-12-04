@@ -170,7 +170,7 @@ class ResidualMessagePassingBlock(torch.nn.Module):
         return data
 
 
-class RGNN(torch.nn.Module):
+class BGNN(torch.nn.Module):
     def __init__(self,
                  node_input_dim=18,
                  edge_input_dim=7,
@@ -181,7 +181,7 @@ class RGNN(torch.nn.Module):
                  hidden_dim4=16,
                  hidden_dim5=16,
                  output_dim=1):
-        super(RGNN, self).__init__()
+        super(BGNN, self).__init__()
         self.ffnn = torch.nn.Linear(node_input_dim, hidden_dim0)
         self.resmpblock0 = ResidualMessagePassingBlock(hidden_dim0, hidden_dim1, edge_input_dim)
         self.resmpblock1 = ResidualMessagePassingBlock(hidden_dim1, hidden_dim2, edge_input_dim)
