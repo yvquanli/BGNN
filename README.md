@@ -1,5 +1,5 @@
-# RGNN
-Code for "Residual graph learning with directed message passing for molecular properties prediction"
+# BGNN
+Code for "Introducing block design in graph neural networks to improve molecular properties prediction"
 
 
 ### Requirements 
@@ -14,7 +14,7 @@ rdkit >= '2019.03.4'
 
 **For qm9 dataset**
 ```sh
-git clone https://github.com/yvquanli/rgnn
+git clone https://github.com/yvquanli/bgnn
 # download and unzip dataset from https://s3-us-west-1.amazonaws.com/deepchem.io/datasets/molnet_publish/qm9.zip
 python run.py $task $gpu
 
@@ -22,7 +22,7 @@ python run.py $task $gpu
 
 **For alchemy dataset**
 ```sh
-git clone https://github.com/yvquanli/rgnn
+git clone https://github.com/yvquanli/bgnn
 # download and unzip dataset from https://alchemy.tencent.com/
 python run.py $task $gpu
 
