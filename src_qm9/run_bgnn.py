@@ -5,7 +5,7 @@ import torch_geometric.transforms as T
 from utils import Complete
 from dataset import QM9Dataset
 from trainer import Trainer
-from model import RGNN
+from model import BGNN
 
 warnings.filterwarnings("ignore")
 task = int(sys.argv[1])
@@ -42,7 +42,7 @@ train_dataset = dataset[one_tenth * 2:]
 assert len(train_dataset) + len(valid_dataset) + len(test_dataset) == len(dataset)
 
 print('Training init...')
-model = RGNN()
+model = BGNN()
 trainer = Trainer(option, model, \
                   train_dataset, valid_dataset, test_dataset)
 trainer.train()
